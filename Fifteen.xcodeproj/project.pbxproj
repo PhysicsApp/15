@@ -14,6 +14,7 @@
 		B328A3951C90A0BA00680938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B328A3931C90A0BA00680938 /* LaunchScreen.storyboard */; };
 		B328A3A01C90A0BA00680938 /* FifteenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328A39F1C90A0BA00680938 /* FifteenTests.swift */; };
 		B328A3AB1C90A0BA00680938 /* FifteenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328A3AA1C90A0BA00680938 /* FifteenUITests.swift */; };
+		B328A3B91C90ABC800680938 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328A3B81C90ABC800680938 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B328A3A61C90A0BA00680938 /* FifteenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FifteenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B328A3AA1C90A0BA00680938 /* FifteenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifteenUITests.swift; sourceTree = "<group>"; };
 		B328A3AC1C90A0BA00680938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B328A3B81C90ABC800680938 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				B328A38A1C90A0BA00680938 /* AppDelegate.swift */,
 				B328A38C1C90A0BA00680938 /* ViewController.swift */,
 				B328A38E1C90A0BA00680938 /* Main.storyboard */,
+				B328A3B81C90ABC800680938 /* Card.swift */,
 				B328A3911C90A0BA00680938 /* Assets.xcassets */,
 				B328A3931C90A0BA00680938 /* LaunchScreen.storyboard */,
 				B328A3961C90A0BA00680938 /* Info.plist */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B328A38D1C90A0BA00680938 /* ViewController.swift in Sources */,
+				B328A3B91C90ABC800680938 /* Card.swift in Sources */,
 				B328A38B1C90A0BA00680938 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
