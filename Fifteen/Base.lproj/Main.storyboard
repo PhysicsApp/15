@@ -88,10 +88,10 @@
             </objects>
             <point key="canvasLocation" x="365" y="565"/>
         </scene>
-        <!--View Controller-->
+        <!--Master Fifteen View Controller-->
         <scene sceneID="TDZ-QH-cRc">
             <objects>
-                <viewController id="jTR-fz-GZk" sceneMemberID="viewController">
+                <viewController id="jTR-fz-GZk" customClass="MasterFifteenViewController" customModule="Fifteen" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GAp-YE-zGy"/>
                         <viewControllerLayoutGuide type="bottom" id="GHX-Ed-DYZ"/>
@@ -187,7 +187,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="x1d-1w-Gcf"/>
                     <connections>
-                        <segue destination="Uic-Yw-bIE" kind="show" id="CCt-xS-Wiv"/>
+                        <outlet property="cardOneView" destination="fSP-Fa-dyH" id="QGS-RJ-1CW"/>
+                        <outlet property="cardThreeView" destination="FMH-PM-dGn" id="Wok-73-vJk"/>
+                        <outlet property="cardTwoView" destination="9mp-ex-cFT" id="AUv-bx-VhV"/>
+                        <outlet property="playerTurnLabel" destination="cRm-pe-WFa" id="VRN-mQ-4N6"/>
+                        <segue destination="Uic-Yw-bIE" kind="show" identifier="pick" id="CCt-xS-Wiv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KFZ-GW-SZp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -377,8 +381,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a card to drop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMF-Kb-bLv">
-                                <rect key="frame" x="215" y="464" width="170.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Choose a card to pick" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMF-Kb-bLv">
+                                <rect key="frame" x="215" y="464" width="170.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
