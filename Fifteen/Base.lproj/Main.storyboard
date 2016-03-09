@@ -105,21 +105,18 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSP-Fa-dyH" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="109.5" height="165"/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="fSP-Fa-dyH" secondAttribute="height" multiplier="2:3" id="omA-Jj-wUs"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FMH-PM-dGn" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
                                         <rect key="frame" x="440" y="0.0" width="109.5" height="165"/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="FMH-PM-dGn" secondAttribute="height" multiplier="2:3" id="Grm-vU-MYP"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9mp-ex-cFT" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
                                         <rect key="frame" x="220" y="0.0" width="109.5" height="165"/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="9mp-ex-cFT" secondAttribute="height" multiplier="2:3" id="kx2-3w-cpf"/>
                                         </constraints>
@@ -232,21 +229,18 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mZd-fa-nEW" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="59.5" height="90"/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="mZd-fa-nEW" secondAttribute="height" multiplier="2:3" id="88u-t8-D9L"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kF6-aa-0Qv" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
                                         <rect key="frame" x="240" y="0.0" width="59.5" height="90"/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="kF6-aa-0Qv" secondAttribute="height" multiplier="2:3" id="fDa-33-1eR"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tLX-Dl-gI8" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
                                         <rect key="frame" x="121" y="0.0" width="59.5" height="90"/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="tLX-Dl-gI8" secondAttribute="height" multiplier="2:3" id="dsL-6n-X6x"/>
                                         </constraints>
@@ -270,21 +264,18 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U3f-Ce-heq" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="59.5" height="90"/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="U3f-Ce-heq" secondAttribute="height" multiplier="2:3" id="gna-lL-B9Y"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FKT-9f-Fwb" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
                                         <rect key="frame" x="240" y="0.0" width="59.5" height="90"/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="FKT-9f-Fwb" secondAttribute="height" multiplier="2:3" id="eJs-9b-rp8"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hSs-Pe-cnc" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
                                         <rect key="frame" x="120" y="0.0" width="59.5" height="90"/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="hSs-Pe-cnc" secondAttribute="height" multiplier="2:3" id="HuL-tK-YTh"/>
                                         </constraints>
@@ -326,21 +317,18 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DEf-XF-vls" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="59.5" height="90"/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="DEf-XF-vls" secondAttribute="height" multiplier="2:3" id="2rK-QN-yi1"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nlk-OK-Dw2" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
                                         <rect key="frame" x="240" y="0.0" width="59.5" height="90"/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="nlk-OK-Dw2" secondAttribute="height" multiplier="2:3" id="27z-om-GsC"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IG8-6q-Av8" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
                                         <rect key="frame" x="120" y="0.0" width="59.5" height="90"/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="IG8-6q-Av8" secondAttribute="height" multiplier="2:3" id="woq-K1-c88"/>
                                         </constraints>
@@ -443,21 +431,18 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CY8-1Y-Kgo" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="109.5" height="165"/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="CY8-1Y-Kgo" secondAttribute="height" multiplier="2:3" id="EA8-2O-kdB"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EMu-UI-dpc" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
                                         <rect key="frame" x="440" y="0.0" width="109.5" height="165"/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="EMu-UI-dpc" secondAttribute="height" multiplier="2:3" id="vTd-hR-cUE"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqX-7c-hCf" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
                                         <rect key="frame" x="220" y="0.0" width="109.5" height="165"/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="hqX-7c-hCf" secondAttribute="height" multiplier="2:3" id="uqD-lI-t5k"/>
                                         </constraints>

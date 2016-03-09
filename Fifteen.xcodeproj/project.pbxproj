@@ -16,6 +16,7 @@
 		B328A3AB1C90A0BA00680938 /* FifteenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328A3AA1C90A0BA00680938 /* FifteenUITests.swift */; };
 		B328A3B91C90ABC800680938 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328A3B81C90ABC800680938 /* Card.swift */; };
 		B3DEB0DF1C90BC08000E17EF /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DEB0DE1C90BC08000E17EF /* CardView.swift */; };
+		B3DEB0E11C90C406000E17EF /* PlayerStatusProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DEB0E01C90C406000E17EF /* PlayerStatusProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		B328A3AC1C90A0BA00680938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B328A3B81C90ABC800680938 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		B3DEB0DE1C90BC08000E17EF /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		B3DEB0E01C90C406000E17EF /* PlayerStatusProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerStatusProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				B328A3931C90A0BA00680938 /* LaunchScreen.storyboard */,
 				B328A3961C90A0BA00680938 /* Info.plist */,
 				B3DEB0DE1C90BC08000E17EF /* CardView.swift */,
+				B3DEB0E01C90C406000E17EF /* PlayerStatusProtocol.swift */,
 			);
 			path = Fifteen;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				B328A38D1C90A0BA00680938 /* ViewController.swift in Sources */,
 				B328A3B91C90ABC800680938 /* Card.swift in Sources */,
+				B3DEB0E11C90C406000E17EF /* PlayerStatusProtocol.swift in Sources */,
 				B3DEB0DF1C90BC08000E17EF /* CardView.swift in Sources */,
 				B328A38B1C90A0BA00680938 /* AppDelegate.swift in Sources */,
 			);
