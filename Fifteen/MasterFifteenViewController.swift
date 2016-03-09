@@ -67,8 +67,8 @@ class MasterFifteenViewController: UIViewController, CardTouchingProtocol{
     
     func shufleSpace(inout array : [Int]){
         
-        for i in 0...array.count{
-            let j = random() & array.count
+        for i in 0..<array.count{
+            let j = random() % array.count
             (array[i], array[j]) = (array[j], array[i])
         }
         
