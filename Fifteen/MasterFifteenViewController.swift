@@ -15,6 +15,7 @@ class MasterFifteenViewController: UIViewController, CardTouchingProtocol, Playe
     
     private var currentPlayer = 1
     
+
     private var playerNames:[String] = []
     
     private var usingCards = [CardView]()
@@ -25,9 +26,17 @@ class MasterFifteenViewController: UIViewController, CardTouchingProtocol, Playe
 
     @IBOutlet weak var playerTurnLabel: UILabel!
     
+    private var droped = false
+    private var picked = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(true, animated: false)
+        loadControllerVariables()
+        startTurn()
+    }
+
+    func loadControllerVariables(){
         self.availableCards = createDeck()
         self.playerCards.append([Int]())
         self.playerCards.append([Int]())
@@ -35,9 +44,8 @@ class MasterFifteenViewController: UIViewController, CardTouchingProtocol, Playe
         self.cardOneView.delegate = self
         self.cardTwoView.delegate = self
         self.cardThreeView.delegate = self
-        startTurn()
     }
-
+    
     private func createDeck()->[Int]{
         var array = [Int]()
         
@@ -51,7 +59,6 @@ class MasterFifteenViewController: UIViewController, CardTouchingProtocol, Playe
         
     }
 
-    
     func prepareFromSegue(playerOneName : String, playerTwoName : String){
         playerNames.append(playerOneName)
         playerNames.append(playerTwoName)
@@ -65,8 +72,7 @@ class MasterFifteenViewController: UIViewController, CardTouchingProtocol, Playe
             controller.prepareFromSegue(self)
         }
     }
-    
-    
+
     func shufleSpace(inout array : [Int]){
         
         for i in 0..<array.count{
@@ -80,7 +86,6 @@ class MasterFifteenViewController: UIViewController, CardTouchingProtocol, Playe
         self.playerdidDropCard(card.value)
         self.pickCard()
     }
-    
     
     func startTurn(){
         self.prepareLabel()
@@ -147,34 +152,51 @@ class MasterFifteenViewController: UIViewController, CardTouchingProtocol, Playe
         }
     }
     
-    
-    func playerdidDropCard(card : Int){
+    func playerdidDropCard(card : Int)->Bool{
+        
+        if picked || playerCards[currentPlayer - 1 ].count != 3{
+            return false
+        }
+        
         let index = self.playerCards[currentPlayer - 1].indexOf(card)
         
         if index == nil{
-            fatalError("Recieved invalid index that was not on the current player cards")
+            return false
         }
         
         self.playerCards[currentPlayer-1].removeAtIndex(index!)
         self.availableCards.append(card)
         self.shufleSpace(&self.availableCards!)
+        return true
     }
     
-    func playerdidGotCard(card : Int){
+    func playerdidGotCard(card : Int)->Bool{
+        
+        
+        
         let index = self.availableCards.indexOf(card)
         
         if index == nil || playerCards[currentPlayer - 1].count == 3{
-            fatalError("Recieved invalid index that was not on the current player cards or player had max cards")
+            return false
         }
         
         self.availableCards.removeAtIndex(index!)
         self.playerCards[currentPlayer - 1].append(card)
+        return true
     }
     
-    func playerDidFinishTurn(){
+    func playerDidFinishTurn()->Bool{
+        
+        if !picked{
+            return false
+        }
+        
         self.navigationController?.popToViewController(self, animated: true)
         currentPlayer = currentPlayer == 1 ? 2 : 1
+        droped = false
+        picked = false
         self.startTurn()
+        return true
     }
     
     func getPlayerCards()->[Int]{
@@ -196,6 +218,5 @@ class MasterFifteenViewController: UIViewController, CardTouchingProtocol, Playe
     func gameDidEnded(){
         self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
-    
     
 }

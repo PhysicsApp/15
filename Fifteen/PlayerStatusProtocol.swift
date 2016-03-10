@@ -11,17 +11,17 @@ import UIKit
 protocol PlayerStatusDelegate{
     
     /**      
-     This method should tell the delegate that the player droped a card and should return the new player's set of cards.
+     This method should tell the delegate that the player droped a card and should return if the operation succeded
      */
-    func playerdidDropCard(card : Int)
+    func playerdidDropCard(card : Int) -> Bool
 
     /**
      This method should tell the delegate that the player droped a card and should return the new player's set of cards.
      */
-    func playerdidGotCard(card : Int)
+    func playerdidGotCard(card : Int) -> Bool
     
     /// This method should be called when the turn is over and the game should be dismissed.
-    func playerDidFinishTurn()
+    func playerDidFinishTurn() -> Bool
     
     /// Returns the cards currently held by the user
     func getPlayerCards()->[Int]
