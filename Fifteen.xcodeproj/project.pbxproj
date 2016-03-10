@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B321FED21C90F7A100F191EE /* PickCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B321FED11C90F7A100F191EE /* PickCardViewController.swift */; };
 		B328A38B1C90A0BA00680938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328A38A1C90A0BA00680938 /* AppDelegate.swift */; };
 		B328A38D1C90A0BA00680938 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328A38C1C90A0BA00680938 /* ViewController.swift */; };
 		B328A3901C90A0BA00680938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B328A38E1C90A0BA00680938 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B321FED11C90F7A100F191EE /* PickCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickCardViewController.swift; sourceTree = "<group>"; };
 		B328A3871C90A0BA00680938 /* Fifteen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fifteen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B328A38A1C90A0BA00680938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B328A38C1C90A0BA00680938 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				B328A38C1C90A0BA00680938 /* ViewController.swift */,
 				B3DEB0E21C90C53A000E17EF /* MasterFifteenViewController.swift */,
 				B328A38E1C90A0BA00680938 /* Main.storyboard */,
+				B321FED11C90F7A100F191EE /* PickCardViewController.swift */,
 				B328A3911C90A0BA00680938 /* Assets.xcassets */,
 				B328A3931C90A0BA00680938 /* LaunchScreen.storyboard */,
 				B328A3961C90A0BA00680938 /* Info.plist */,
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B328A38D1C90A0BA00680938 /* ViewController.swift in Sources */,
+				B321FED21C90F7A100F191EE /* PickCardViewController.swift in Sources */,
 				B3DEB0E11C90C406000E17EF /* PlayerStatusProtocol.swift in Sources */,
 				B3DEB0DF1C90BC08000E17EF /* CardView.swift in Sources */,
 				B3DEB0E31C90C53A000E17EF /* MasterFifteenViewController.swift in Sources */,

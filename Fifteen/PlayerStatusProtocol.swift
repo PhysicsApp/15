@@ -20,7 +20,7 @@ protocol PlayerStatusDelegate{
      */
     func playerdidGotCard(card : Int)
     
-    /// This method should be called when the match is over and the game should be dismissed.
+    /// This method should be called when the turn is over and the game should be dismissed.
     func playerDidFinishTurn()
     
     /// Returns the cards currently held by the user
@@ -29,4 +29,7 @@ protocol PlayerStatusDelegate{
     /// Returns the currently available set of cards
    func getAvailableCards()->[Int]
     
+    func getPlayerName()->String
+    
+    func gameDidEnded()
 }
