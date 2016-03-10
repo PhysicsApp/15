@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -20,32 +20,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game of 15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QnF-wr-d4R">
-                                <rect key="frame" x="237" y="168.5" width="127.5" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Game of 15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QnF-wr-d4R">
+                                <rect key="frame" x="237" y="169" width="128" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Xjz-Va-bNP">
-                                <rect key="frame" x="30" y="230" width="540" height="141"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Xjz-Va-bNP">
+                                <rect key="frame" x="30" y="230" width="540" height="142"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cCL-hy-hDf">
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cCL-hy-hDf">
                                         <rect key="frame" x="0.0" y="0.0" width="540" height="61"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter player one name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzk-vS-qgE">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enter player one name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzk-vS-qgE">
                                                 <rect key="frame" x="0.0" y="0.0" width="540" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player One" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1oF-Bi-6I3">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player One" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1oF-Bi-6I3">
                                                 <rect key="frame" x="0.0" y="31" width="540" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VtQ-8Q-9pu">
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VtQ-8Q-9pu">
                                         <rect key="frame" x="0.0" y="81" width="540" height="61"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter player two name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQx-N1-a5P">
@@ -109,25 +109,25 @@
                                 <rect key="frame" x="25" y="217" width="550" height="165"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSP-Fa-dyH" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="109.5" height="165"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="165"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="fSP-Fa-dyH" secondAttribute="height" multiplier="2:3" id="omA-Jj-wUs"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FMH-PM-dGn" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
-                                        <rect key="frame" x="440" y="0.0" width="109.5" height="165"/>
+                                        <rect key="frame" x="440" y="0.0" width="110" height="165"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="FMH-PM-dGn" secondAttribute="height" multiplier="2:3" id="Grm-vU-MYP"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9mp-ex-cFT" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
-                                        <rect key="frame" x="220" y="0.0" width="109.5" height="165"/>
+                                        <rect key="frame" x="220" y="0.0" width="110" height="165"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="9mp-ex-cFT" secondAttribute="height" multiplier="2:3" id="kx2-3w-cpf"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rwJ-6o-Kcr">
-                                        <rect key="frame" x="109.5" y="60" width="110.5" height="45"/>
+                                        <rect key="frame" x="110" y="60" width="110" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="Qzh-Zl-T7p"/>
                                         </constraints>
@@ -159,19 +159,19 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a card to drop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0V-cn-Psy">
-                                <rect key="frame" x="215" y="437" width="170.5" height="20.5"/>
+                                <rect key="frame" x="215" y="437" width="171" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your cards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hk4-Oa-3dv">
-                                <rect key="frame" x="259" y="177.5" width="82" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Your cards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hk4-Oa-3dv">
+                                <rect key="frame" x="259" y="178" width="82" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player X turn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRm-pe-WFa">
-                                <rect key="frame" x="251" y="90" width="98" height="20.5"/>
+                                <rect key="frame" x="251" y="90" width="98" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -237,19 +237,19 @@
                                 <rect key="frame" x="150" y="255" width="300" height="90"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mZd-fa-nEW" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="59.5" height="90"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="90"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="mZd-fa-nEW" secondAttribute="height" multiplier="2:3" id="88u-t8-D9L"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kF6-aa-0Qv" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
-                                        <rect key="frame" x="240" y="0.0" width="59.5" height="90"/>
+                                        <rect key="frame" x="240" y="0.0" width="60" height="90"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="kF6-aa-0Qv" secondAttribute="height" multiplier="2:3" id="fDa-33-1eR"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tLX-Dl-gI8" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
-                                        <rect key="frame" x="121" y="0.0" width="59.5" height="90"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tLX-Dl-gI8" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
+                                        <rect key="frame" x="121" y="0.0" width="60" height="90"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="tLX-Dl-gI8" secondAttribute="height" multiplier="2:3" id="dsL-6n-X6x"/>
                                         </constraints>
@@ -272,31 +272,31 @@
                                 <rect key="frame" x="150" y="353" width="300" height="90"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U3f-Ce-heq" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="59.5" height="90"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="90"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="U3f-Ce-heq" secondAttribute="height" multiplier="2:3" id="gna-lL-B9Y"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FKT-9f-Fwb" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
-                                        <rect key="frame" x="240" y="0.0" width="59.5" height="90"/>
+                                        <rect key="frame" x="240" y="0.0" width="60" height="90"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="FKT-9f-Fwb" secondAttribute="height" multiplier="2:3" id="eJs-9b-rp8"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hSs-Pe-cnc" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
-                                        <rect key="frame" x="120" y="0.0" width="59.5" height="90"/>
+                                        <rect key="frame" x="120" y="0.0" width="60" height="90"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="hSs-Pe-cnc" secondAttribute="height" multiplier="2:3" id="HuL-tK-YTh"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zRp-mM-wQo">
-                                        <rect key="frame" x="59.5" y="22.5" width="60.5" height="45"/>
+                                        <rect key="frame" x="60" y="23" width="60" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="0tw-tN-VME"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="81u-cf-TLN">
-                                        <rect key="frame" x="180" y="22.5" width="60" height="45"/>
+                                        <rect key="frame" x="180" y="23" width="60" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="y0a-bz-kA5"/>
                                         </constraints>
@@ -325,31 +325,31 @@
                                 <rect key="frame" x="150" y="157" width="300" height="90"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DEf-XF-vls" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="59.5" height="90"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="90"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="DEf-XF-vls" secondAttribute="height" multiplier="2:3" id="2rK-QN-yi1"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nlk-OK-Dw2" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
-                                        <rect key="frame" x="240" y="0.0" width="59.5" height="90"/>
+                                        <rect key="frame" x="240" y="0.0" width="60" height="90"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="nlk-OK-Dw2" secondAttribute="height" multiplier="2:3" id="27z-om-GsC"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IG8-6q-Av8" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
-                                        <rect key="frame" x="120" y="0.0" width="59.5" height="90"/>
+                                        <rect key="frame" x="120" y="0.0" width="60" height="90"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="IG8-6q-Av8" secondAttribute="height" multiplier="2:3" id="woq-K1-c88"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UEA-BV-qsD">
-                                        <rect key="frame" x="59.5" y="22.5" width="60.5" height="45"/>
+                                        <rect key="frame" x="60" y="23" width="60" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="sCK-Sw-vn2"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yHA-7x-7lL">
-                                        <rect key="frame" x="180" y="22.5" width="60" height="45"/>
+                                        <rect key="frame" x="180" y="23" width="60" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="jp8-A4-eHJ"/>
                                         </constraints>
@@ -375,19 +375,19 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player X turn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYT-jc-SaF">
-                                <rect key="frame" x="251" y="77" width="98" height="20.5"/>
+                                <rect key="frame" x="251" y="77" width="98" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available Cards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXq-eJ-5fG">
-                                <rect key="frame" x="242" y="118" width="117" height="20.5"/>
+                                <rect key="frame" x="242" y="118" width="117" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Choose a card to pick" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMF-Kb-bLv">
-                                <rect key="frame" x="215" y="464" width="170.5" height="21"/>
+                                <rect key="frame" x="215" y="464" width="171" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -433,10 +433,10 @@
             </objects>
             <point key="canvasLocation" x="2691" y="557"/>
         </scene>
-        <!--View Controller-->
+        <!--Confirm View Controller-->
         <scene sceneID="oFE-Zo-3Jp">
             <objects>
-                <viewController id="dHG-09-fda" sceneMemberID="viewController">
+                <viewController id="dHG-09-fda" customClass="ConfirmViewController" customModule="Fifteen" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OOA-dA-dAg"/>
                         <viewControllerLayoutGuide type="bottom" id="o8i-mV-2UY"/>
@@ -449,25 +449,25 @@
                                 <rect key="frame" x="25" y="217" width="550" height="165"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CY8-1Y-Kgo" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="109.5" height="165"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="165"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="CY8-1Y-Kgo" secondAttribute="height" multiplier="2:3" id="EA8-2O-kdB"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EMu-UI-dpc" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
-                                        <rect key="frame" x="440" y="0.0" width="109.5" height="165"/>
+                                        <rect key="frame" x="440" y="0.0" width="110" height="165"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="EMu-UI-dpc" secondAttribute="height" multiplier="2:3" id="vTd-hR-cUE"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqX-7c-hCf" customClass="CardView" customModule="Fifteen" customModuleProvider="target">
-                                        <rect key="frame" x="220" y="0.0" width="109.5" height="165"/>
+                                        <rect key="frame" x="220" y="0.0" width="110" height="165"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="hqX-7c-hCf" secondAttribute="height" multiplier="2:3" id="uqD-lI-t5k"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zRu-Im-n7e">
-                                        <rect key="frame" x="109" y="60" width="110.5" height="45"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zRu-Im-n7e">
+                                        <rect key="frame" x="109" y="60" width="111" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="7Dh-uP-0lI"/>
                                         </constraints>
@@ -498,14 +498,14 @@
                                     <constraint firstAttribute="bottom" secondItem="EMu-UI-dpc" secondAttribute="bottom" id="x5U-9h-353"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your new cards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPN-Ko-FWt">
-                                <rect key="frame" x="241" y="178" width="118" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Your new cards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPN-Ko-FWt">
+                                <rect key="frame" x="241" y="178" width="118" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player X turn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G4h-3s-gxZ">
-                                <rect key="frame" x="251" y="90" width="98" height="20.5"/>
+                                <rect key="frame" x="251" y="90" width="98" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -513,6 +513,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLb-ng-y9g">
                                 <rect key="frame" x="285" y="433" width="30" height="30"/>
                                 <state key="normal" title="Ok"/>
+                                <connections>
+                                    <action selector="done:" destination="dHG-09-fda" eventType="touchUpInside" id="M5g-CO-f5i"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -530,17 +533,21 @@
                     </view>
                     <navigationItem key="navigationItem" id="M6P-sY-Rdo"/>
                     <connections>
-                        <segue destination="DUs-ht-hKr" kind="show" id="W3D-ib-OHi"/>
+                        <outlet property="card1" destination="CY8-1Y-Kgo" id="ZKs-lj-dD3"/>
+                        <outlet property="card2" destination="hqX-7c-hCf" id="K36-iX-Wtc"/>
+                        <outlet property="card3" destination="EMu-UI-dpc" id="z4M-zY-lY2"/>
+                        <outlet property="playerLabelTurn" destination="G4h-3s-gxZ" id="6ZO-gl-bQx"/>
+                        <segue destination="DUs-ht-hKr" kind="show" identifier="win" id="W3D-ib-OHi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Fw-oa-bnB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3382" y="557"/>
         </scene>
-        <!--View Controller-->
+        <!--Finish View Controller-->
         <scene sceneID="uu9-rD-WWi">
             <objects>
-                <viewController id="DUs-ht-hKr" sceneMemberID="viewController">
+                <viewController id="DUs-ht-hKr" customClass="FinishViewController" customModule="Fifteen" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xHQ-bv-t8L"/>
                         <viewControllerLayoutGuide type="bottom" id="j3N-FP-o5P"/>
@@ -550,20 +557,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="50" translatesAutoresizingMaskIntoConstraints="NO" id="Gj0-rI-Gb7">
-                                <rect key="frame" x="242" y="209" width="116" height="38.5"/>
+                                <rect key="frame" x="242" y="209" width="116" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wins with 15 points!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="50" translatesAutoresizingMaskIntoConstraints="NO" id="Wo7-fP-9ho">
-                                <rect key="frame" x="161" y="281" width="278.5" height="38.5"/>
+                                <rect key="frame" x="161" y="281" width="279" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xl-aP-Oe0">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xl-aP-Oe0">
                                 <rect key="frame" x="280" y="349" width="41" height="30"/>
                                 <state key="normal" title="Home"/>
+                                <connections>
+                                    <action selector="goHome:" destination="DUs-ht-hKr" eventType="touchUpInside" id="cj1-Fc-UxO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -583,6 +593,9 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="RCo-mY-Bad"/>
+                    <connections>
+                        <outlet property="playerLabel" destination="Gj0-rI-Gb7" id="KrU-11-HG6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nke-L6-grC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

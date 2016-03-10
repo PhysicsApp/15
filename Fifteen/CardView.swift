@@ -48,6 +48,7 @@ import UIKit
         self.label.frame.size = self.frame.size
         self.label.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
         self.label.autoresizesSubviews = true
+        self.label.textAlignment = .Center
         
         self.imageView.frame.size = self.frame.size
         self.imageView.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]

@@ -78,6 +78,7 @@ class MasterFifteenViewController: UIViewController, CardTouchingProtocol, Playe
     
     func cardTouched(card: CardView) {
         self.playerdidDropCard(card.value)
+        self.pickCard()
     }
     
     
