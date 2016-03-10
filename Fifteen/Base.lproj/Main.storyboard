@@ -221,10 +221,10 @@
             </objects>
             <point key="canvasLocation" x="1132" y="542"/>
         </scene>
-        <!--View Controller-->
+        <!--Pick Card View Controller-->
         <scene sceneID="BoF-1w-tkH">
             <objects>
-                <viewController id="Uic-Yw-bIE" sceneMemberID="viewController">
+                <viewController id="Uic-Yw-bIE" customClass="PickCardViewController" customModule="Fifteen" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="okg-Kf-Nvu"/>
                         <viewControllerLayoutGuide type="bottom" id="lM7-fy-cEn"/>
@@ -416,7 +416,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="qhu-aF-EQQ"/>
                     <connections>
-                        <segue destination="dHG-09-fda" kind="show" id="Dbj-uT-6kQ"/>
+                        <outlet property="card1" destination="DEf-XF-vls" id="fwN-0S-Qfm"/>
+                        <outlet property="card2" destination="IG8-6q-Av8" id="GnQ-Ua-Ic9"/>
+                        <outlet property="card3" destination="nlk-OK-Dw2" id="pUG-jX-Wnd"/>
+                        <outlet property="card4" destination="mZd-fa-nEW" id="aMG-Xc-DaC"/>
+                        <outlet property="card5" destination="tLX-Dl-gI8" id="kNO-ZZ-iuh"/>
+                        <outlet property="card6" destination="kF6-aa-0Qv" id="kwD-rJ-dBO"/>
+                        <outlet property="card7" destination="U3f-Ce-heq" id="0oH-w3-Ije"/>
+                        <outlet property="card8" destination="hSs-Pe-cnc" id="YFT-zy-TXQ"/>
+                        <outlet property="card9" destination="FKT-9f-Fwb" id="vsa-4I-fxb"/>
+                        <outlet property="playerLabel" destination="OYT-jc-SaF" id="dNZ-FC-5zb"/>
+                        <segue destination="dHG-09-fda" kind="show" identifier="showNew" id="Dbj-uT-6kQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M6V-Ln-ETm" userLabel="First Responder" sceneMemberID="firstResponder"/>

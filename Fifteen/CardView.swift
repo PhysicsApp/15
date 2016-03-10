@@ -15,7 +15,11 @@ import UIKit
 
 @objc class CardView: UIView {
 
-    var value : Int = 0
+    var value : Int = 0{
+        didSet{
+            self.label.text = "\(value)"
+        }
+    }
     
     private let label = UILabel()
     private let imageView = UIImageView(image: UIImage(named: "card")!)
@@ -63,21 +67,18 @@ import UIKit
         return hidesValue
     }
     
-    func setHiddenValue(flag : Bool, animated : Bool){
+    func setHiddenValue(flag : Bool, animated : Bool, completition : ((Bool)->())?  = nil ){
         let f : ()->() = {
             self.imageView.hidden = !self.hidesValue
         }
         self.hidesValue = flag
         if animated{
-            UIView.animateWithDuration(1, animations: f)
+            UIView.animateWithDuration(3, animations: f,completion: completition)
         }
         else{
             f()
         }
     }
-    
-    func loadWithString(str : String){
-        self.label.text = str
-    }
+
     
 }

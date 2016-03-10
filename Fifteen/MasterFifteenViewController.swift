@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MasterFifteenViewController: UIViewController, CardTouchingProtocol{
+class MasterFifteenViewController: UIViewController, CardTouchingProtocol, PlayerStatusDelegate{
 
     private var playerCards = [[Int]]()
     private var availableCards : [Int]!
@@ -59,7 +59,11 @@ class MasterFifteenViewController: UIViewController, CardTouchingProtocol{
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         hideCards()
-        //TODO:
+        
+        if segue.identifier == "pick"{
+            let controller = segue.destinationViewController as! PickCardViewController
+            controller.prepareFromSegue(self)
+        }
     }
     
     
@@ -73,11 +77,12 @@ class MasterFifteenViewController: UIViewController, CardTouchingProtocol{
     }
     
     func cardTouched(card: CardView) {
-        
+        self.playerdidDropCard(card.value)
     }
     
     
     func startTurn(){
+        self.prepareLabel()
         self.prepareCards()
         //Ensure the rigth player is here
         let controller = UIAlertController(title: "About to start turn", message: "Ensure \(self.playerNames[currentPlayer - 1]) is using the phone", preferredStyle: UIAlertControllerStyle.Alert)
@@ -180,7 +185,16 @@ class MasterFifteenViewController: UIViewController, CardTouchingProtocol{
     }
     
     func prepareLabel(){
-        self.playerTurnLabel.text = playerNames[currentPlayer - 1]
+        self.playerTurnLabel.text = "\(playerNames[currentPlayer - 1]) turn"
+    }
+    
+    func getPlayerName()->String{
+        return self.playerNames[currentPlayer - 1]
     }
 
+    func gameDidEnded(){
+        self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
 }
