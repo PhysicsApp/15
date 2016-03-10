@@ -69,15 +69,38 @@ import UIKit
     }
     
     func setHiddenValue(flag : Bool, animated : Bool, completition : ((Bool)->())?  = nil ){
-        let f : ()->() = {
-            self.imageView.hidden = !self.hidesValue
+        
+        if flag == self.hidesValue{
+            return
         }
+        
         self.hidesValue = flag
+        
+        
         if animated{
-            UIView.animateWithDuration(3, animations: f,completion: completition)
+            
+            if flag{
+                self.imageView.alpha = 0
+                self.imageView.hidden = false
+            }
+            UIView.animateWithDuration(0.5, animations: {
+                if flag{
+                    self.imageView.alpha = 1
+                }
+                else{
+                    self.imageView.alpha = 0
+                }
+                } ,completion: {
+                    b in
+                    if(!flag){
+                        self.imageView.hidden = true
+                        self.imageView.alpha = 1
+                    }
+                    completition?(b)
+            })
         }
         else{
-            f()
+            self.imageView.hidden = !self.hidesValue
         }
     }
 

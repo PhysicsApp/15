@@ -105,7 +105,7 @@ class MasterFifteenViewController: UIViewController, CardTouchingProtocol, Playe
     func showCards(){
         
         for c in self.usingCards{
-            c.setHiddenValue(false, animated: true)
+            c.setHiddenValue(false, animated: false)
         }
         
         for i in 0..<self.playerCards[currentPlayer - 1].count{
