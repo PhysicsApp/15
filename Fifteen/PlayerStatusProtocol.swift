@@ -32,4 +32,6 @@ protocol PlayerStatusDelegate{
     func getPlayerName()->String
     
     func gameDidEnded()
+    
+    func getCurrentPlayer()->Int
 }

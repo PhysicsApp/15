@@ -18,20 +18,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.performSegueWithIdentifier("", sender: self)
-        
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tap)
-    
     }
     
     func dismissKeyboard() {
         view.endEditing(true)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -40,7 +32,23 @@ class ViewController: UIViewController {
         master.prepareFromSegue(playerOneName, playerTwoName: playerTwoName)
     }
 
-    @IBAction func setNames(sender: UIButton) {
+    @IBAction func setNames(sender: UIButton){
+        
+        
+        if(!validate()){
+            let alertController = UIAlertController(title: "Error", message:
+                "Names can not be equal", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+            return
+        }
+        
+        super.performSegueWithIdentifier("navFromNames", sender: self)
+    }
+    
+    func validate()->Bool{
         if(!playerOneField.text!.isEmpty){
             self.playerOneName = playerOneField.text!
         }
@@ -55,18 +63,11 @@ class ViewController: UIViewController {
             self.playerTwoName = playerTwoField.placeholder!
         }
         
-        if(playerOneName == playerTwoName){
-            let alertController = UIAlertController(title: "Error", message:
-                "Names can not be equal", preferredStyle: UIAlertControllerStyle.Alert)
-            
-            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default,handler: nil))
-            
-            self.presentViewController(alertController, animated: true, completion: nil)
-            return
+        if(playerOneName.lowercaseString == playerTwoName.lowercaseString){
+            return false
         }
         
-        super.performSegueWithIdentifier("navFromNames", sender: self)
-        
+        return true
     }
 }
 

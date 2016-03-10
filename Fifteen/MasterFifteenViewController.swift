@@ -16,7 +16,7 @@ class MasterFifteenViewController: UIViewController, CardTouchingProtocol, Playe
     private var currentPlayer = 1
     
 
-    private var playerNames:[String] = []
+private var playerNames:[String]  = [String]()
     
     private var usingCards = [CardView]()
     
@@ -33,6 +33,9 @@ class MasterFifteenViewController: UIViewController, CardTouchingProtocol, Playe
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         loadControllerVariables()
+        self.cardOneView.delegate = self
+        self.cardTwoView.delegate = self
+        self.cardThreeView.delegate = self
         startTurn()
     }
 
@@ -40,10 +43,6 @@ class MasterFifteenViewController: UIViewController, CardTouchingProtocol, Playe
         self.availableCards = createDeck()
         self.playerCards.append([Int]())
         self.playerCards.append([Int]())
-        
-        self.cardOneView.delegate = self
-        self.cardTwoView.delegate = self
-        self.cardThreeView.delegate = self
     }
     
     private func createDeck()->[Int]{
@@ -154,7 +153,7 @@ class MasterFifteenViewController: UIViewController, CardTouchingProtocol, Playe
     
     func playerdidDropCard(card : Int)->Bool{
         
-        if picked || playerCards[currentPlayer - 1 ].count != 3{
+        if droped || picked || playerCards[currentPlayer - 1 ].count != 3{
             return false
         }
         
@@ -167,21 +166,21 @@ class MasterFifteenViewController: UIViewController, CardTouchingProtocol, Playe
         self.playerCards[currentPlayer-1].removeAtIndex(index!)
         self.availableCards.append(card)
         self.shufleSpace(&self.availableCards!)
+        self.droped = true
         return true
     }
     
     func playerdidGotCard(card : Int)->Bool{
         
-        
-        
         let index = self.availableCards.indexOf(card)
         
-        if index == nil || playerCards[currentPlayer - 1].count == 3{
+        if index == nil || playerCards[currentPlayer - 1].count == 3 || picked{
             return false
         }
         
         self.availableCards.removeAtIndex(index!)
         self.playerCards[currentPlayer - 1].append(card)
+        picked = true
         return true
     }
     
@@ -217,6 +216,10 @@ class MasterFifteenViewController: UIViewController, CardTouchingProtocol, Playe
 
     func gameDidEnded(){
         self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func getCurrentPlayer()->Int{
+        return self.currentPlayer
     }
     
 }
