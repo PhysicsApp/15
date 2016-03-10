@@ -18,6 +18,7 @@
 		B375D1C91C9121FF00E3AEDF /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B375D1C81C9121FF00E3AEDF /* ConfirmViewController.swift */; };
 		B375D1CB1C91254600E3AEDF /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B375D1CA1C91254600E3AEDF /* FinishViewController.swift */; };
 		B399B5921C91BCBB005CA7FA /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B399B5911C91BCBA005CA7FA /* ViewControllerTests.swift */; };
+		B399B5941C91DB11005CA7FA /* ConfirmViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B399B5931C91DB11005CA7FA /* ConfirmViewControllerTests.swift */; };
 		B3DEB0DF1C90BC08000E17EF /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DEB0DE1C90BC08000E17EF /* CardView.swift */; };
 		B3DEB0E11C90C406000E17EF /* PlayerStatusProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DEB0E01C90C406000E17EF /* PlayerStatusProtocol.swift */; };
 		B3DEB0E31C90C53A000E17EF /* MasterFifteenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DEB0E21C90C53A000E17EF /* MasterFifteenViewController.swift */; };
@@ -58,6 +59,7 @@
 		B375D1C81C9121FF00E3AEDF /* ConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
 		B375D1CA1C91254600E3AEDF /* FinishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
 		B399B5911C91BCBA005CA7FA /* ViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		B399B5931C91DB11005CA7FA /* ConfirmViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmViewControllerTests.swift; sourceTree = "<group>"; };
 		B3DEB0DE1C90BC08000E17EF /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		B3DEB0E01C90C406000E17EF /* PlayerStatusProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerStatusProtocol.swift; sourceTree = "<group>"; };
 		B3DEB0E21C90C53A000E17EF /* MasterFifteenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterFifteenViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				B328A39F1C90A0BA00680938 /* FifteenMasterTests.swift */,
 				B328A3A11C90A0BA00680938 /* Info.plist */,
 				B399B5911C91BCBA005CA7FA /* ViewControllerTests.swift */,
+				B399B5931C91DB11005CA7FA /* ConfirmViewControllerTests.swift */,
 			);
 			path = FifteenTests;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B399B5941C91DB11005CA7FA /* ConfirmViewControllerTests.swift in Sources */,
 				B328A3A01C90A0BA00680938 /* FifteenMasterTests.swift in Sources */,
 				B399B5921C91BCBB005CA7FA /* ViewControllerTests.swift in Sources */,
 			);

@@ -23,7 +23,7 @@ class PickCardViewController: UIViewController, CardTouchingProtocol {
     @IBOutlet weak var playerLabel: UILabel!
     var delegate : PlayerStatusDelegate!
     
-    private var array = [CardView]()
+    var array = [CardView]()
     private var selected = false
     
     override func viewDidLoad() {
@@ -55,12 +55,6 @@ class PickCardViewController: UIViewController, CardTouchingProtocol {
         self.playerLabel.text = "\(self.delegate.getPlayerName()) turn"
         
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 
     func prepareFromSegue(delegate : PlayerStatusDelegate){
         self.delegate = delegate
