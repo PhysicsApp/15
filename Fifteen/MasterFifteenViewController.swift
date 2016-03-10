@@ -15,7 +15,7 @@ class MasterFifteenViewController: UIViewController, CardTouchingProtocol{
     
     private var currentPlayer = 1
     
-    private var playerNames = ["Player one", "Playertwo"]
+    private var playerNames:[String] = []
     
     private var usingCards = [CardView]()
     

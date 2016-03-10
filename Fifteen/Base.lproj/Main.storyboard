@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="s4G-pM-wtJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -38,7 +38,7 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1oF-Bi-6I3">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player One" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1oF-Bi-6I3">
                                                 <rect key="frame" x="0.0" y="31" width="540" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -54,7 +54,7 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nmB-Us-6Hh">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player Two" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nmB-Us-6Hh">
                                                 <rect key="frame" x="0.0" y="31" width="540" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -67,7 +67,7 @@
                                 <rect key="frame" x="276" y="388" width="49" height="30"/>
                                 <state key="normal" title="Play 15"/>
                                 <connections>
-                                    <segue destination="s4G-pM-wtJ" kind="show" id="5NU-Ff-QDv"/>
+                                    <action selector="setNames:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GyJ-PK-Urn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -83,10 +83,15 @@
                             <constraint firstItem="Xjz-Va-bNP" firstAttribute="top" secondItem="QnF-wr-d4R" secondAttribute="bottom" constant="31.5" id="rtG-oK-QQP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="playerOneField" destination="1oF-Bi-6I3" id="UFB-Dr-MsD"/>
+                        <outlet property="playerTwoField" destination="nmB-Us-6Hh" id="rva-TN-z4P"/>
+                        <segue destination="s4G-pM-wtJ" kind="show" identifier="navFromNames" id="1gb-0a-hve"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="365" y="565"/>
+            <point key="canvasLocation" x="373" y="542"/>
         </scene>
         <!--Master Fifteen View Controller-->
         <scene sceneID="TDZ-QH-cRc">
