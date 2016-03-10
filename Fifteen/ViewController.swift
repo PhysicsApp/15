@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.performSegueWithIdentifier("", sender: self)
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +20,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func performSegueWithIdentifier(identifier: String, sender: AnyObject?) {
+        
+    }
 
 }
 

@@ -15,7 +15,7 @@ class MasterFifteenViewController: UIViewController, CardTouchingProtocol{
     
     private var currentPlayer = 1
     
-    private var playerNames = [String]()
+    private var playerNames = ["Player one", "Playertwo"]
     
     private var usingCards = [CardView]()
     
@@ -35,8 +35,7 @@ class MasterFifteenViewController: UIViewController, CardTouchingProtocol{
         self.cardOneView.delegate = self
         self.cardTwoView.delegate = self
         self.cardThreeView.delegate = self
-        
-        
+        startTurn()
     }
 
     private func createDeck()->[Int]{
@@ -59,9 +58,8 @@ class MasterFifteenViewController: UIViewController, CardTouchingProtocol{
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        self.cardOneView.setHiddenValue(true, animated: false)
-        self.cardTwoView.setHiddenValue(true, animated: false)
-        self.cardThreeView.setHiddenValue(true, animated: false)
+        hideCards()
+        //TODO:
     }
     
     
@@ -75,7 +73,7 @@ class MasterFifteenViewController: UIViewController, CardTouchingProtocol{
     }
     
     func cardTouched(card: CardView) {
-        //TODO:
+        
     }
     
     
@@ -99,9 +97,20 @@ class MasterFifteenViewController: UIViewController, CardTouchingProtocol{
     }
     
     func showCards(){
+        
         for c in self.usingCards{
             c.setHiddenValue(false, animated: true)
         }
+        
+        for i in 0..<self.playerCards[currentPlayer - 1].count{
+            self.usingCards[i].value = self.playerCards[currentPlayer-1][i]
+        }
+    }
+    
+    func hideCards(){
+        self.cardOneView.setHiddenValue(true, animated: false)
+        self.cardTwoView.setHiddenValue(true, animated: false)
+        self.cardThreeView.setHiddenValue(true, animated: false)
     }
     
     func prepareCards(){
@@ -134,25 +143,44 @@ class MasterFifteenViewController: UIViewController, CardTouchingProtocol{
     
     
     func playerdidDropCard(card : Int){
-        //TODO:
+        let index = self.playerCards[currentPlayer - 1].indexOf(card)
+        
+        if index == nil{
+            fatalError("Recieved invalid index that was not on the current player cards")
+        }
+        
+        self.playerCards[currentPlayer-1].removeAtIndex(index!)
+        self.availableCards.append(card)
+        self.shufleSpace(&self.availableCards!)
     }
     
     func playerdidGotCard(card : Int){
-        //TODO:
+        let index = self.availableCards.indexOf(card)
+        
+        if index == nil || playerCards[currentPlayer - 1].count == 3{
+            fatalError("Recieved invalid index that was not on the current player cards or player had max cards")
+        }
+        
+        self.availableCards.removeAtIndex(index!)
+        self.playerCards[currentPlayer - 1].append(card)
     }
     
     func playerDidFinishTurn(){
-        //TODO:
+        self.navigationController?.popToViewController(self, animated: true)
+        currentPlayer = currentPlayer == 1 ? 2 : 1
+        self.startTurn()
     }
     
     func getPlayerCards()->[Int]{
-        //TODO:
-        return [Int]()
+        return self.playerCards[currentPlayer - 1]
     }
     
     func getAvailableCards()->[Int]{
-        //TODO:
-        return [Int]()
+        return self.availableCards
+    }
+    
+    func prepareLabel(){
+        self.playerTurnLabel.text = playerNames[currentPlayer - 1]
     }
 
 }
