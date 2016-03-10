@@ -19,16 +19,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //self.performSegueWithIdentifier("", sender: self)
-        resetNames()
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tap)
     
-    }
-    
-    func resetNames(){
-        playerOneName = "Player One"
-        playerTwoName = "Player Two"
     }
     
     func dismissKeyboard() {
@@ -50,9 +44,15 @@ class ViewController: UIViewController {
         if(!playerOneField.text!.isEmpty){
             self.playerOneName = playerOneField.text!
         }
+        else{
+            self.playerOneName = playerOneField.placeholder!
+        }
         
         if(!playerTwoField.text!.isEmpty){
             self.playerTwoName = playerTwoField.text!
+        }
+        else{
+            self.playerTwoName = playerTwoField.placeholder!
         }
         
         if(playerOneName == playerTwoName){
@@ -62,7 +62,6 @@ class ViewController: UIViewController {
             alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default,handler: nil))
             
             self.presentViewController(alertController, animated: true, completion: nil)
-            resetNames()
             return
         }
         
