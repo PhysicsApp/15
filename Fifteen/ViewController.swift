@@ -13,15 +13,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var playerTwoField: UITextField!
     @IBOutlet weak var playerOneField: UITextField!
     
-    var playerOneName: String = "Player One"
-    var playerTwoName: String = "Player Two"
+    var playerOneName: String!
+    var playerTwoName: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         //self.performSegueWithIdentifier("", sender: self)
+        resetNames()
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tap)
+    
+    }
+    
+    func resetNames(){
+        playerOneName = "Player One"
+        playerTwoName = "Player Two"
     }
     
     func dismissKeyboard() {
@@ -55,6 +62,7 @@ class ViewController: UIViewController {
             alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default,handler: nil))
             
             self.presentViewController(alertController, animated: true, completion: nil)
+            resetNames()
             return
         }
         
