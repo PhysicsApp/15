@@ -13,8 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var playerTwoField: UITextField!
     @IBOutlet weak var playerOneField: UITextField!
     
-    var playerOneName: String = "Player One"
-    var playerTwoName: String = "Player Two"
+    var playerOneName: String!
+    var playerTwoName: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tap)
+    
     }
     
     func dismissKeyboard() {
@@ -43,9 +44,15 @@ class ViewController: UIViewController {
         if(!playerOneField.text!.isEmpty){
             self.playerOneName = playerOneField.text!
         }
+        else{
+            self.playerOneName = playerOneField.placeholder!
+        }
         
         if(!playerTwoField.text!.isEmpty){
             self.playerTwoName = playerTwoField.text!
+        }
+        else{
+            self.playerTwoName = playerTwoField.placeholder!
         }
         
         if(playerOneName == playerTwoName){
